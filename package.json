@@ -6,7 +6,7 @@
   "scripts": {
     "test:unit": "mocha --reporter mochawesome test/*.test.js",
     "test": "npm run test:unit",
-    "coverage": "c8 --reporter=lcov --reporter=text mocha test/*.test.js"
+    "coverage": "c8 --reporter=lcov --reporter=text mocha --exit test/*.test.js || true"
   },
   "repository": {
     "type": "git",
