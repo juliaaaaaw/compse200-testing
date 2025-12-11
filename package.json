@@ -13,8 +13,8 @@
     "url": "git+https://github.com/juliaaaaaw/compse200-testing.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Julia Hautala, Jaakko Utriainen",
+  "license": "MIT",
   "type": "module",
   "bugs": {
     "url": "https://github.com/juliaaaaaw/compse200-testing/issues"
