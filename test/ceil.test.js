@@ -27,11 +27,11 @@ describe("Test cases for ceil.js", () => {
     });
 
     it("TC007: Test unexpected value for number", () => {
-        expect(() => ceil("asdf", 2)).to.throw(TypeError);
+        expect(() => ceil("asdf", 2)).to.throw(TypeError, "Error, entered parameter 'number' is not a number");
     });
 
     it("TC008: Test unexpected value for precision", () => {
-        expect(() => ceil(5040, "jkl")).to.throw(TypeError);
+        expect(() => ceil(5040, "jkl")).to.throw(TypeError, "Error, entered parameter 'precision' is not a number");
     });
 
     it("TC009: Test case where precision is significantly different from number", () => {
