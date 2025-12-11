@@ -6,8 +6,13 @@
   "scripts": {
     "test:unit": "mocha --reporter mochawesome test/*.test.js",
     "test": "npm run test:unit",
-    "coverage": "c8 --reporter=lcov --reporter=text mocha --exit test/*.test.js || true"
+    "coverage": "c8 mocha --exit test/*.test.js || true"
   },
+  "c8": {
+  "include": ["src"],
+  "exclude": ["src/.internal/**"], 
+  "reporter": ["lcov", "text"]
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juliaaaaaw/compse200-testing.git"
