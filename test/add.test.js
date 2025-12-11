@@ -31,11 +31,11 @@ describe("Test cases for add.js", () => {
     });
 
     it("TC008: Test error handling with first parameter", () => {
-        expect(add(3, "asd")).to.throw(TypeError, "secondNum is not a number");
+        expect(() => add(3, "asd")).to.throw(TypeError, "secondNum is not a number");
     });
 
     it("TC009: Test error handling with second parameter", () => {
-        expect(add("jkl", 5)).to.throw(TypeError, "firstNum is not a number");
+        expect(() => add("jkl", 5)).to.throw(TypeError, "firstNum is not a number");
     });
 
 });
