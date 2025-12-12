@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import map from "../src/map.js";
 
 describe("Test cases for map.js", () => {
-    it("TC001: basic case – squares numbers", () => {
+    it("TC001: basic case - squares numbers", () => {
         const result = map([2, 3], (n) => n * n);
         expect(result).to.deep.equal([4, 9]);
     });
@@ -42,7 +42,7 @@ describe("Test cases for map.js", () => {
         expect(result).to.deep.equal(['ALICE', 'BOB']);
     });
 
-    it("TC007: error handling – non-function iteratee", () => {
+    it("TC007: error handling - non-function iteratee", () => {
         expect(() => map([1, 2], "not a function")).to.throw(TypeError);
         expect(() => map([1, 2], null)).to.throw(TypeError);
     });
